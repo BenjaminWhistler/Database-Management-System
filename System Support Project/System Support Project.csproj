@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{63CF0A7D-55C7-412B-91E7-1BEFD775792F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>System_Support_Project</RootNamespace>
+    <AssemblyName>System Support Project</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\AccountAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\AccountAddForm.Designer.cs">
+      <DependentUpon>AccountAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\AccountEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\AccountEditForm.Designer.cs">
+      <DependentUpon>AccountEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\AccountFilters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\AccountFilters.Designer.cs">
+      <DependentUpon>AccountFilters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\AccountMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\AccountMainForm.Designer.cs">
+      <DependentUpon>AccountMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account\AccountViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account\AccountViewForm.Designer.cs">
+      <DependentUpon>AccountViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alumni\AlumniAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumni\AlumniAddForm.Designer.cs">
+      <DependentUpon>AlumniAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alumni\AlumniEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumni\AlumniEditForm.Designer.cs">
+      <DependentUpon>AlumniEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alumni\AlumniFilters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumni\AlumniFilters.Designer.cs">
+      <DependentUpon>AlumniFilters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alumni\AlumniMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumni\AlumniMainForm.Designer.cs">
+      <DependentUpon>AlumniMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alumni\AlumniMainForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumni\AlumniMainForm1.Designer.cs">
+      <DependentUpon>AlumniMainForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alumni\AlumniViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alumni\AlumniViewForm.Designer.cs">
+      <DependentUpon>AlumniViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Alumni_Association_DocumentationDataSet.cs">
+      <DependentUpon>Alumni_Association_DocumentationDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Alumni_Association_DocumentationDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Alumni_Association_DocumentationDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Donation\DonationAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Donation\DonationAddForm.Designer.cs">
+      <DependentUpon>DonationAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Donation\DonationEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Donation\DonationEditForm.Designer.cs">
+      <DependentUpon>DonationEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Donation\DonationFilters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Donation\DonationFilters.Designer.cs">
+      <DependentUpon>DonationFilters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Donation\DonationMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Donation\DonationMainForm.Designer.cs">
+      <DependentUpon>DonationMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Donation\DonationViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Donation\DonationViewForm.Designer.cs">
+      <DependentUpon>DonationViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Education\EducationAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Education\EducationAddForm.Designer.cs">
+      <DependentUpon>EducationAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Education\EducationEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Education\EducationEditForm.Designer.cs">
+      <DependentUpon>EducationEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Education\EducationFilters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Education\EducationFilters.Designer.cs">
+      <DependentUpon>EducationFilters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Education\EducationMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Education\EducationMainForm.Designer.cs">
+      <DependentUpon>EducationMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Education\EducationViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Education\EducationViewForm.Designer.cs">
+      <DependentUpon>EducationViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Account\AccountAddForm.resx">
+      <DependentUpon>AccountAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\AccountEditForm.resx">
+      <DependentUpon>AccountEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\AccountFilters.resx">
+      <DependentUpon>AccountFilters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\AccountMainForm.resx">
+      <DependentUpon>AccountMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account\AccountViewForm.resx">
+      <DependentUpon>AccountViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alumni\AlumniAddForm.resx">
+      <DependentUpon>AlumniAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alumni\AlumniEditForm.resx">
+      <DependentUpon>AlumniEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alumni\AlumniFilters.resx">
+      <DependentUpon>AlumniFilters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alumni\AlumniMainForm.resx">
+      <DependentUpon>AlumniMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alumni\AlumniMainForm1.resx">
+      <DependentUpon>AlumniMainForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alumni\AlumniViewForm.resx">
+      <DependentUpon>AlumniViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Donation\DonationAddForm.resx">
+      <DependentUpon>DonationAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Donation\DonationEditForm.resx">
+      <DependentUpon>DonationEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Donation\DonationFilters.resx">
+      <DependentUpon>DonationFilters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Donation\DonationMainForm.resx">
+      <DependentUpon>DonationMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Donation\DonationViewForm.resx">
+      <DependentUpon>DonationViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Education\EducationAddForm.resx">
+      <DependentUpon>EducationAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Education\EducationEditForm.resx">
+      <DependentUpon>EducationEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Education\EducationFilters.resx">
+      <DependentUpon>EducationFilters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Education\EducationMainForm.resx">
+      <DependentUpon>EducationMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Education\EducationViewForm.resx">
+      <DependentUpon>EducationViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Alumni_Association_DocumentationDataSet.xsc">
+      <DependentUpon>Alumni_Association_DocumentationDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Alumni_Association_DocumentationDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Alumni_Association_DocumentationDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Alumni_Association_DocumentationDataSet.xss">
+      <DependentUpon>Alumni_Association_DocumentationDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
